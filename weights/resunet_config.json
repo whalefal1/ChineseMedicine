@@ -1,0 +1,8 @@
+{
+    "model_name": "resnet50_unet",
+    "n_classes": 1,
+    "input_height": 256,
+    "input_width": 256,
+    "output_height": 256,
+    "output_width": 256
+}
