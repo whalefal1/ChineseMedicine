@@ -16,10 +16,10 @@ class TestDataLoader(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         """设置测试环境"""
-        cls.train_img_path = 'tongue_data/tongue_data/train_img'
-        cls.train_label_path = 'tongue_data/tongue_data/train_label'
-        cls.test_img_path = 'tongue_data/tongue_data/test_img'
-        cls.test_label_path = 'tongue_data/tongue_data/test_label'
+        cls.train_img_path = 'tongue_data/tongue_data/tongue_data/train_img'
+        cls.train_label_path = 'tongue_data/tongue_data/tongue_data/train_label'
+        cls.test_img_path = 'tongue_data/tongue_data/tongue_data/test_img'
+        cls.test_label_path = 'tongue_data/tongue_data/tongue_data/test_label'
         
         # 设置随机种子
         set_seed(42)

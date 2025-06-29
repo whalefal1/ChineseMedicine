@@ -3,8 +3,8 @@ from keras_segmentation.predict import model_from_checkpoint_path, predict, eval
 
 # 路径配置
 CHECKPOINTS_PATH = 'weights'
-TEST_IMG_DIR = 'tongue_data/tongue_data/test_img'
-TEST_LABEL_DIR = 'tongue_data/tongue_data/test_label'
+TEST_IMG_DIR = 'tongue_data/tongue_data/tongue_data/test_img'
+TEST_LABEL_DIR = 'tongue_data/tongue_data/tongue_data/test_label'
 PREDICTION_DIR = 'prediction'
 
 os.makedirs(PREDICTION_DIR, exist_ok=True)

@@ -4,17 +4,19 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 from analysis.main import Main
 
 # 健康状况判定函数
-def analyze_health(health_dict, threshold=-0.2):
-    problems = []
-    if health_dict.get('heart', 0) < threshold:
-        problems.append('血虚')
-    if health_dict.get('spleen', 0) < threshold:
-        problems.append('脾虚')
-    if health_dict.get('kidney', 0) < threshold:
-        problems.append('肾虚')
-    if health_dict.get('liver', 0) < threshold:
-        problems.append('肝虚')
-    return problems
+def analyze_health(health_dict):
+    res = []
+    if abs(health_dict.get('heart', 0)) > 0.4:
+        res.append('血虚')
+    if abs(health_dict.get('spleen', 0)) > 0.25:
+        res.append('脾虚')
+    if abs(health_dict.get('kidney', 0)) > 0.4:
+        res.append('肾虚')
+    if abs(health_dict.get('liver', 0)) > 0.45:
+        res.append('肝郁')
+    if not res:
+        res.append('健康')
+    return res
 
 if __name__ == '__main__':
     Main()
@@ -38,5 +40,5 @@ if __name__ == '__main__':
                 'spleen': float(items[5])
             }
             problems = analyze_health(health_dict)
-            fout.write(f'{filename}\t{ ", ".join(problems) if problems else "健康" }\n')
+            fout.write(f'{filename}\t{ ", ".join(problems) }\n')
     print('健康状况判定已输出到 health_diagnosis.txt') 

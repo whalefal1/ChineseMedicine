@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8127496c-602e-4d8f-8809-79379b804412" name="更改" comment="分析用户健康情况" />
+    <list default="true" id="8127496c-602e-4d8f-8809-79379b804412" name="更改" comment="分析用户健康情况">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChineseMedicine_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/ChineseMedicine_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/merge_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/merge_features.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comparison.py" beforeDir="false" afterPath="$PROJECT_DIR$/comparison.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health_diagnosis.txt" beforeDir="false" afterPath="$PROJECT_DIR$/health_diagnosis.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_train.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_data_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_data_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_segmentation_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_segmentation_model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tongue_quality_check.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tongue_quality_check.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,7 +50,11 @@
     &quot;Python 测试.test_data_loader.TestDataLoader.test_set_seed 的 Python 测试.executor&quot;: &quot;Run&quot;,
     &quot;Python.ChineseMedicine_analysis.executor&quot;: &quot;Run&quot;,
     &quot;Python.batch_viscera_analysis.executor&quot;: &quot;Run&quot;,
+    &quot;Python.batch_viscera_analysis_medical.executor&quot;: &quot;Run&quot;,
+    &quot;Python.binarize_prediction_masks_auto.executor&quot;: &quot;Run&quot;,
+    &quot;Python.haveTongue.executor&quot;: &quot;Run&quot;,
     &quot;Python.main_train.executor&quot;: &quot;Run&quot;,
+    &quot;Python.predict_one.executor&quot;: &quot;Run&quot;,
     &quot;Python.segmentation_tongue.executor&quot;: &quot;Run&quot;,
     &quot;Python.test.executor&quot;: &quot;Run&quot;,
     &quot;Python.test_segmentation_model.executor&quot;: &quot;Run&quot;,
@@ -49,7 +65,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore_missing_gitignore&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Python/ChineseMedicine&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/web_2&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -64,31 +80,8 @@
       <recent name="D:\Python\ChineseMedicine" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.ChineseMedicine_analysis">
-    <configuration name="ChineseMedicine_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ChineseMedicine" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ChineseMedicine_analysis.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="batch_viscera_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.predict_one">
+    <configuration name="batch_viscera_analysis_medical" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ChineseMedicine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,7 +95,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tongue/batch_viscera_analysis.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tongue/batch_viscera_analysis_medical.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -111,30 +104,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="segmentation_tongue" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="ChineseMedicine" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tongue" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tongue/segmentation_tongue.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="binarize_prediction_masks_auto" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ChineseMedicine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,7 +118,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/binarize_prediction_masks_auto.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -157,7 +127,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test_tongue_segmentation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="haveTongue" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="ChineseMedicine" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -166,12 +136,58 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tongue/tongue_segmentation" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tongue" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tongue/tongue_segmentation/test_tongue_segmentation.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tongue/haveTongue.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main_train" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ChineseMedicine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main_train.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="predict_one" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ChineseMedicine" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/predict_one.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -182,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.ChineseMedicine_analysis" />
-        <item itemvalue="Python.batch_viscera_analysis" />
-        <item itemvalue="Python.test" />
-        <item itemvalue="Python.segmentation_tongue" />
-        <item itemvalue="Python.test_tongue_segmentation" />
+        <item itemvalue="Python.predict_one" />
+        <item itemvalue="Python.batch_viscera_analysis_medical" />
+        <item itemvalue="Python.binarize_prediction_masks_auto" />
+        <item itemvalue="Python.haveTongue" />
+        <item itemvalue="Python.main_train" />
       </list>
     </recent_temporary>
   </component>
@@ -216,6 +232,12 @@
       <workItem from="1750756827259" duration="12215000" />
       <workItem from="1750810565748" duration="1490000" />
       <workItem from="1750815491024" duration="11842000" />
+      <workItem from="1750827689708" duration="302000" />
+      <workItem from="1751074743598" duration="820000" />
+      <workItem from="1751076868989" duration="1985000" />
+      <workItem from="1751101185684" duration="1631000" />
+      <workItem from="1751104767823" duration="1256000" />
+      <workItem from="1751160554565" duration="1295000" />
     </task>
     <task id="LOCAL-00001" summary="项目初始化+数据处理功能utils">
       <option name="closed" value="true" />
@@ -297,7 +319,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750826465993</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="分析用户健康情况">
+      <option name="closed" value="true" />
+      <created>1750827941319</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1750827941319</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,14 +357,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="分析用户健康情况" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/ChineseMedicine$main_train.coverage" NAME="main_train 覆盖结果" MODIFIED="1750761352378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ChineseMedicine$predict_one.coverage" NAME="predict_one 覆盖结果" MODIFIED="1751161814518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/ChineseMedicine$segmentation_tongue.coverage" NAME="segmentation_tongue 覆盖结果" MODIFIED="1750820465446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tongue" />
+    <SUITE FILE_PATH="coverage/ChineseMedicine$haveTongue.coverage" NAME="haveTongue 覆盖结果" MODIFIED="1751102316301" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tongue" />
+    <SUITE FILE_PATH="coverage/ChineseMedicine$main_train.coverage" NAME="main_train 覆盖结果" MODIFIED="1751078236323" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ChineseMedicine$train.coverage" NAME="train 覆盖结果" MODIFIED="1750752921256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/keras_segmentation" />
     <SUITE FILE_PATH="coverage/ChineseMedicine$test_segmentation_model.coverage" NAME="test_segmentation_model 覆盖结果" MODIFIED="1750759448447" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/ChineseMedicine$segmentation_tongue.coverage" NAME="segmentation_tongue 覆盖结果" MODIFIED="1750820465446" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tongue" />
     <SUITE FILE_PATH="coverage/ChineseMedicine$ChineseMedicine_analysis.coverage" NAME="ChineseMedicine_analysis 覆盖结果" MODIFIED="1750825635317" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ChineseMedicine$.coverage" NAME=" 覆盖结果" MODIFIED="1750757786725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ChineseMedicine$test.coverage" NAME="test 覆盖结果" MODIFIED="1750820558210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ChineseMedicine$batch_viscera_analysis.coverage" NAME="batch_viscera_analysis 覆盖结果" MODIFIED="1750821283305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tongue" />
+    <SUITE FILE_PATH="coverage/ChineseMedicine$binarize_prediction_masks_auto.coverage" NAME="binarize_prediction_masks_auto 覆盖结果" MODIFIED="1751102334905" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ChineseMedicine$test_tongue_segmentation.coverage" NAME="test_tongue_segmentation 覆盖结果" MODIFIED="1750819794445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tongue/tongue_segmentation" />
+    <SUITE FILE_PATH="coverage/ChineseMedicine$batch_viscera_analysis_medical.coverage" NAME="batch_viscera_analysis_medical 覆盖结果" MODIFIED="1751102411358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tongue" />
   </component>
 </project>

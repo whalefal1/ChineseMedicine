@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
-TEST_IMG_DIR = 'tongue_data/tongue_data/test_img'
+TEST_IMG_DIR = 'tongue_data/tongue_data/tongue_data/test_img'
 PREDICTION_DIR = 'prediction'
 COMPARE_DIR = 'compare'
 

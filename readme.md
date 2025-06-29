@@ -79,7 +79,7 @@ LS.csv文件共包含360列数据，一次计算产生180列数据，提供了2�
 
 ![image-20250624172550610](https://whalefal1.oss-cn-beijing.aliyuncs.com/%E5%9B%BE%E5%BA%8A/202506241725661.png)
 
-本任务主要定义数据加载及处理的函数。在“data_loader.py”文件中编写本任务的代码。
+本任务主要定义数据加载及处理的函数。在"data_loader.py"文件中编写本任务的代码。
 
 (1)导入包
 
@@ -144,11 +144,11 @@ LS.csv文件共包含360列数据，一次计算产生180列数据，提供了2�
 ### 1.开发准备
 
 (1)创建子目录在ChineseMedicine/keras_.segmentation"目录下创建子目录"models"。
-(2)创建代码文件在ChineseMedicine/.keras_segmentation/models目录下新建五个python文件，分别命名为"_init_py、“resnet50.py、"unet.py、“model_utils..py、“all_models.py。
+(2)创建代码文件在ChineseMedicine/.keras_segmentation/models目录下新建五个python文件，分别命名为"_init_py、"resnet50.py、"unet.py、"model_utils..py、"all_models.py。
 
 ### 2.构建Res-Unet网络模型本任务主要完成Res-Unet网络模型的构建。
 
-#### 2.1构建编码器本模块主要完成编码器的构建，在keras_.segmentation/models/目录下的"resnet50.py“文件中添加本模块的代码.
+#### 2.1构建编码器本模块主要完成编码器的构建，在keras_.segmentation/models/目录下的"resnet50.py"文件中添加本模块的代码.
 
 (1)导入库
 
@@ -158,11 +158,11 @@ LS.csv文件共包含360列数据，一次计算产生180列数据，提供了2�
 (4)定义Identity Block残差块在本模块中，定义identity_.block函数，即定义一个输入和输出维度相同的残差块，该残差块的作用是较为稳定地通过加深层数来提高模型的效果，同时也可以避免梯度消失的问题。
 (5)Conv Block残差块定义co_block函数，实现一个残差块，输入和输出的维度是不一样的，所以不能连续串联，它的作用是改变网络的维度(6)实现编码器搭建好组件残差块之后就是确定网络结构，将一个个残差块组成残差网络。
 
-#### 2.2定义模型的属性和方法本模块定义模型的一些属性和方法keras_segmentation/models/目录下的“model_utiIs.py文件中添加本模块的代码。
+#### 2.2定义模型的属性和方法本模块定义模型的一些属性和方法keras_segmentation/models/目录下的"model_utiIs.py文件中添加本模块的代码。
 
 (1)导入包(2)定义模型的属性和方法定义get_segmentation_model函数，定义模型的一些属性和方法。
 
-#### 2.3实现res-unet网络本模块实现res-unet网络的搭建，在keras_.segmentation/models/目录下的“unet.py文件中添加本模块的代码。
+#### 2.3实现res-unet网络本模块实现res-unet网络的搭建，在keras_.segmentation/models/目录下的"unet.py"文件中添加本模块的代码。
 
 (1)导入包(2)设置相关参数·IMAGE_ORDERING:该参数用来设定数据的维度顺序。在深度学习中，不同的深度学习框架可能对应不同的影像表达，在数据处理时应做相应的转换。在表示一组彩色图片的问题上，Theano和Caffe使用（样本数，通道数，行或称为高，列或称为宽）通道在前的方式，称为channels_first;而TensorFlow使用（样本数，行或称为高，列或称为宽，通道数)通道在后的方式，称为channels_last。
 ·MERGE_AXIS:值为-1，表示在最后一维操作(3)构建解码器定义unet函数，构建解码器。
@@ -175,8 +175,8 @@ LS.csv文件共包含360列数据，一次计算产生180列数据，提供了2�
 ### 1.开发准备
 
 (1)创建代码文件
-在ChineseMedicine/根目录下新建一个python文件，命名为“"main_train.py。
-在ChineseMedicine/keras_.segmentation/目录下新建两个python文件，分别命名为"train.py、“_init_.py。
+在ChineseMedicine/根目录下新建一个python文件，命名为""main_train.py。
+在ChineseMedicine/keras_.segmentation/目录下新建两个python文件，分别命名为"train.py、"_init_.py。
 (2)新建子目录
 在ChineseMedicine/根目录下新建一个子目录，命名为weights",用于存储训练好的模型。
 
@@ -207,7 +207,7 @@ find_latest_checkpoint(0函数的主要实现流程如下：
 
 #### 2.2训练模型
 
-该部分主要实现模型训练，在ChineseMedicine/目录下的"main train.py”文件中编写本模块代码。
+该部分主要实现模型训练，在ChineseMedicine/目录下的"main train.py"文件中编写本模块代码。
 (1)导入包
 (2)实现模型的训练
 在该部分中，主要调用定义好的resnet50unet网络结构，以及调用train(O函数，并传入各参数，实现模型的训练。
@@ -221,19 +221,19 @@ find_latest_checkpoint(0函数的主要实现流程如下：
 
 #### (1)创建代码文件
 
-在ChineseMedicine/根目录下新建两个python文件，分别命名为“test.py、"comparison.py。 在ChineseMedicine/keras_segmentation/目录下新建一个python文件，命名为“predict.py。 (2)新建子目录
+在ChineseMedicine/根目录下新建两个python文件，分别命名为"test.py、"comparison.py。 在ChineseMedicine/keras_segmentation/目录下新建一个python文件，命名为"predict.py。 (2)新建子目录
 
-在ChineseMedicine/根目录下新建两个子目录，分别命名为“prediction”、“compare”。 2.测试模型
+在ChineseMedicine/根目录下新建两个子目录，分别命名为"prediction"、"compare"。 2.测试模型
 
 本任务主要是对训练好的模型进行测试，以评估模型的性能2.1定义测试函数
 
-在keras segmentation/目录下的“predict.py”文件中编写本模块代码。 (1)导入包
+在keras segmentation/目录下的"predict.py"文件中编写本模块代码。 (1)导入包
 
 ### (2)加载模型
 
 定义model_from_checkpoint_path()方法，该方法主要用于加载训练轮次最多的模型。model_from_checkpoint_path()方法的具体实现流程：
 
-先判断resunet_config.json”是否为文件；其次加载resunet_config.json文件的内容，然后查找出被训练轮次最多的模型，将训练好的模型权重载入模型。（3）获取标签图像颜色数据
+先判断resunet_config.json"是否为文件；其次加载resunet_config.json文件的内容，然后查找出被训练轮次最多的模型，将训练好的模型权重载入模型。（3）获取标签图像颜色数据
 
 定义get_colored_segmentation_image（）函数，该函数的作用是获取输出标签图像的颜色数据，将标签图像转换成一个288*388*3的数组。
 
@@ -321,15 +321,15 @@ IoU的值在96%以上，说明模型的性能满足使用的需求。注：同�
 
 ### (1)创建子目录
 
-在“ChineseMedicine/"目录下创建子目录"tongue”。
+在"ChineseMedicine/"目录下创建子目录"tongue"。
 
-在ChineseMedicine/tongue“目录下创建子目录“tongue_segmentation”。 (2)创建代码文件
+在ChineseMedicine/tongue"目录下创建子目录"tongue_segmentation"。 (2)创建代码文件
 
-在ChineseMedicine/tongue/tongue_segmentation目录下新建一个python文件，命名为“segmentation.py”。 在ChineseMedicine/tongue/目录下新建一个python文件，命名为“segmentation_tongue.py”。
+在ChineseMedicine/tongue/tongue_segmentation目录下新建一个python文件，命名为"segmentation.py"。 在ChineseMedicine/tongue/目录下新建一个python文件，命名为"segmentation_tongue.py"。
 
 ### 2.定义将舌面划分为各脏器对应的区域的函数
 
-该部分主要定义将舌面划分为肺，脾，肾，左肝，右肝五部分脏器对应的区域的函数，在ChineseMedicine/tongue/tongue_segmentation目录下的“segmentation.py"文件中编 写本模块的代码。
+该部分主要定义将舌面划分为肺，脾，肾，左肝，右肝五部分脏器对应的区域的函数，在ChineseMedicine/tongue/tongue_segmentation目录下的"segmentation.py"文件中编 写本模块的代码。
 
 #### (1)导入包
 
@@ -397,7 +397,7 @@ IoU的值在96%以上，说明模型的性能满足使用的需求。注：同�
 
 ##### (1)创建代码文件
 
-在ChineseMedicine/.tongue//目录下新建一个python.文件，命名为haveTongue.py”。
+在ChineseMedicine/.tongue//目录下新建一个python.文件，命名为haveTongue.py"。
 
 #### 2.舌部质量检测
 
@@ -446,7 +446,7 @@ IoU的值在96%以上，说明模型的性能满足使用的需求。注：同�
 任务指导
 1.开发准备
 (1)创建代码文件
-在ChineseMedicine/tongue/.目录下新建一个python文件，命名为"tongueHist.py”。
+在ChineseMedicine/tongue/.目录下新建一个python文件，命名为"tongueHist.py"。
 2.计算舌部各区域的特征值以及占比
 在本任务中，主要计算舌部特征值与各区域的比例，在tongue/目录下的tongueHist.py文件中编写本模块代码。
 (1)导入包
@@ -479,12 +479,12 @@ IoU的值在96%以上，说明模型的性能满足使用的需求。注：同�
 任务指导
 1.开发准备
 (1)创建子目录
-在ChineseMedicine/"目录下创建子目录“analysis"。
+在ChineseMedicine/"目录下创建子目录"analysis"。
 (2)创建代码文件
 在ChineseMedicine/.analysis/目录下新建辆个python文件，分别命名为merge_features.py、"main.py。
-在ChineseMedicine目录下新建一个python.文件，命名为ChineseMedicine_.analysis.py”。
+在ChineseMedicine目录下新建一个python.文件，命名为ChineseMedicine_.analysis.py"。
 (3)上传特征文件
-从资料中下载LS.csv文件，并上传至"analysis/目录下。
+从资料中下载LS.csv文件，并上传至"analysis/"目录下。
 2.计算各区域的健康值
 2.1定义特征融合的函数
 本模块主要用来计算图像中舌体各区域的健康值，在/analysis//目录下的merge_features.py文件中添加本模块的代码。
@@ -557,7 +557,7 @@ value..bxt文件中；如果存在，先读取历史健康值，然后再计算�
 定义ind_tongue(0函数，对舌部图像进行质量检测。find_tongue函数的具体实现流程徵如下：
 ·调用定义的save_img0函数，调整图像的尺寸：
 ·调用在haveTongue.py文件中定义的haveTongue()函数，对括部图像进行质量检测，如果图像质量不合格，则返回异常信总，并移除文件；如果图像质量合格，则
-输出"code、"box、”msg和time_consuming信点，以及舌部mask,
+输出"code、"box、"msg和time_consuming信点，以及舌部mask,
 (6)计算链康得分
 定义analysis(0硒数，该函数的主要作用是对检测到的舌部区域进行分析，得出整体链章值得分以及心、肝、脾肺、图各区域的健章值得分，得分区间-1，】，越靠
 近0越好。analysis的具体实现流程：
@@ -576,11 +576,11 @@ value..bxt文件中；如果存在，先读取历史健康值，然后再计算�
 在图像上，按任意键关闭图像后，终端页面会继续输出如下图所示：
 
 输出结果是一个字典，字典中的healthy值表示整体健康值，heart值表示心健康值，spleen值表示脾健康值，kidney值表示肾健康值，lung值表示肺健康值，liver值表示
-肝健康值。根据设定的阈值判断，该用户的身体存在“血虚"和“气虚”的问题。
+肝健康值。根据设定的阈值判断，该用户的身体存在"血虚"和"气虚"的问题。
 但由于该用户是第一次进行舌诊，系统中并没有该用户的历史数据，在处理时，将该用户各脏器的健康值均预设为了0.0，即假定该用户是健康的，因此判断结果会略有
 偏差，为了获取更准确地结果，可以多次重复执行，一般第二次舌诊的结果就很准确了。
 重新运行un.py文件，结果如下图所示：
-第二次诊断该用户的身体存在“血虚”、“脾虚"和“气虚"问题。
+第二次诊断该用户的身体存在"血虚"、"脾虚"和"气虚"问题。
 打开example/目录下的expert_diagnosis.Xlsx文件，查看0.jpg对应的专家诊断结果如下图所示：
 专家对于该用户的诊断结果和舌诊系统第二次判断的结果一致。
 此外，用户使用舌诊系统两次诊断的健康值得分存储在features/O/目录下的value.txt文件中，如下图所示：
@@ -588,3 +588,4 @@ value..bxt文件中；如果存在，先读取历史健康值，然后再计算�
 -0.24459529352026832,-0.6,-0.2731810252621164,0.0,-0.6,-0.33914962777555085
 后续对该用户进行诊断时，会使用到这两次诊断的历史数据，
 可以对该用户的舌体多次进行诊断，看结果是否和第二次诊断的结果一致。
+

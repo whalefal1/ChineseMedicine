@@ -71,8 +71,8 @@ def test_model():
     
     # 创建数据集和数据加载器
     test_dataset = TongueDataset(
-        img_dir='tongue_data/tongue_data/test_img',
-        label_dir='tongue_data/tongue_data/test_label'
+        img_dir='tongue_data/tongue_data/tongue_data/test_img',
+        label_dir='tongue_data/tongue_data/tongue_data/test_label'
     )
     test_loader = DataLoader(test_dataset, batch_size=4, shuffle=False)
     print(f'测试数据集大小: {len(test_dataset)}')

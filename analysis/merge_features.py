@@ -5,7 +5,7 @@ import os
 def load_weights(csv_path=None):
     import pandas as pd
     if csv_path is None:
-        csv_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'tongue_data', 'LS.csv')
+        csv_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'tongue_data', 'tongue_data', 'LS.csv')
     arr = pd.read_csv(csv_path, header=None).values.flatten()
     region_names = ['心肺', '肾', '左肝', '右肝', '脾']
     n_feat = 12  # 每区12维特征
